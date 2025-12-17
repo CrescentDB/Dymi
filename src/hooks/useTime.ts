@@ -1,16 +1,26 @@
 import { useState, useEffect } from 'react'
 
-export const useTime = () => {
-  const [time, setTime] = useState(new Date())
+type Theme = 'midnight' | 'aurora' | 'minimal' | 'auto'
+
+export const useTheme = () => {
+  const [theme, setTheme] = useState<Theme>(() => {
+    const saved = localStorage.getItem('dymi-theme')
+    return (saved as Theme) || 'midnight'
+  })
+
+  const [isDark, setIsDark] = useState(true)
 
   useEffect(() => {
-    // Update every 50ms for smooth second hand animation
-    const interval = setInterval(() => {
-      setTime(new Date())
-    }, 50)
+    localStorage.setItem('dymi-theme', theme)
 
-    return () => clearInterval(interval)
-  }, [])
+    if (theme === 'auto') {
+      const hour = new Date().getHours()
+      const autoTheme = hour >= 6 && hour < 18 ? 'minimal' : 'midnight'
+      setIsDark(autoTheme !== 'minimal')
+    } else {
+      setIsDark(theme !== 'minimal')
+    }
+  }, [theme])
 
-  return time
+  return { theme, setTheme, isDark }
 }
