@@ -1,0 +1,45 @@
+.clock {
+  text-align: center;
+  user-select: none;
+}
+
+.time-display {
+  font-size: clamp(4rem, 15vw, 10rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  display: flex;
+  gap: 0.1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-char {
+  display: inline-block;
+  animation: fadeIn 0.6s ease-out;
+  will-change: transform;
+}
+
+.time-char.separator {
+  opacity: 0.7;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Theme-specific glow effects */
+.app.midnight .time-display {
+  text-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
+}
+
+.app.aurora .time-display {
+  text-shadow: 0 0 40px rgba(22, 199, 154, 0.3);
+}
+
+.app.minimal .time-display {
+  text-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .time-display {
+    font-size: clamp(3rem, 12vw, 6rem);
+  }
+}
