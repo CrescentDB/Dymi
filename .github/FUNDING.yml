@@ -1,12 +1,6 @@
 # .github/FUNDING.yml
-# All funding for Dymi is redirected to charities and public-good causes.
-
-github:
-  - DymiCharityRedirect       # GitHub Sponsors account that donates 100% to charities
-
-open_collective: dymi-community  # Community fund, fully transparent
-
-liberapay: dymi-community        # Recurring support, fully open
+# Dymi is fully open-source and does not accept personal donations.
+# If you want to support good causes, click the links below.
 
 custom:
   - https://www.givewell.org/donate
