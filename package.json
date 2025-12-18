@@ -39,10 +39,10 @@
   "license": "CSPL-3.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/dymi"
+    "url": "https://github.com/CrescentDB/dymi"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/dymi/issues"
+    "url": "https://github.com/CrescentDB/dymi/issues"
   },
   "homepage": "https://dymi.app"
 }
