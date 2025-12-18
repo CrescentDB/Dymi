@@ -1,43 +1,73 @@
 ---
-name: Bug report
-about: Create a report to help us improve Dymi
-title: '[BUG] '
+name: bug_report
+about: Create a bug report, to report bugs in Dymi
+title: "[BUG] "
 labels: bug
 assignees: ''
+
 ---
 
-## Describe the bug
-A clear and concise description of what the bug is.
+# Bug Report
 
-## To Reproduce
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+Thank you for taking the time to report a bug in **Dymi**!  
+Please provide as much detail as possible so we can reproduce and fix the issue quickly.
 
-## Expected behavior
-A clear and concise description of what you expected to happen.
+---
 
-## Screenshots
-If applicable, add screenshots to help explain your problem.
+## 🐞 Bug Description
 
-## Environment
-- OS: [e.g. macOS, Windows, Linux]
-- Browser: [e.g. Chrome 120, Firefox 121, Safari 17]
-- Dymi Version: [e.g. 1.0.0]
-- Device: [e.g. Desktop, iPhone 14, iPad Pro]
+<!-- Describe the bug clearly and concisely. -->
 
-## Additional context
-Add any other context about the problem here.
+Example:  
+> "The clock sometimes freezes for a few seconds when switching themes."
 
-## Theme in use
-- [ ] Midnight
-- [ ] Aurora
-- [ ] Minimal
-- [ ] Auto
+---
 
-## Settings
-- [ ] 24-hour format
-- [ ] 12-hour format
-- Timezone: [e.g. America/New_York, local]
+## 🔄 Steps to Reproduce
+
+<!-- List the steps needed to reproduce the bug. -->
+
+1. Open Dymi in a browser.  
+2. Switch from 'Midnight' theme to 'Aurora' theme.  
+3. Observe the clock freezing for a moment.
+
+---
+
+## 📱 Expected Behavior
+
+<!-- What should happen instead of the bug. -->
+
+Example:  
+> "The theme should switch instantly without freezing the clock."
+
+---
+
+## 💻 Environment
+
+<!-- Include relevant technical details. -->
+
+- **OS:** Windows 11 / macOS / Linux / etc.  
+- **Browser / Version:** Chrome, Firefox, Safari, etc.  
+- **Dymi Version:** 1.0.0 (or the version you’re using)
+
+---
+
+## 🖼️ Screenshots / Recordings
+
+<!-- Optional: Include images, gifs, or videos to illustrate the problem. -->
+
+Example:  
+> "Screenshot attached showing the clock frozen for ~3 seconds after theme change."
+
+---
+
+## ✅ Additional Context
+
+<!-- Any other information you think is relevant. -->
+
+Example:  
+> "The issue seems to happen more often on slower devices or when multiple tabs are open."
+
+---
+
+**Thank you for helping make Dymi better!**
