@@ -34,3 +34,6 @@ export const useTimezone = () => {
     detectedTimezone: detectTimezone(),
   }
 }
+
+// Also export as default for compatibility
+export default useTimezone
