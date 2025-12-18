@@ -1,9 +1,12 @@
 # .github/FUNDING.yml
-# Dymi is fully open-source and does not accept personal donations.
-# If you want to support good causes, click the links below.
+# Dymi is fully open-source. All support goes directly to charities.
 
 custom:
-  - https://www.givewell.org/donate
-  - https://www.effectivealtruism.org/donate
-  - https://www.unicef.org/donate
-  - https://www.khanacademy.org/donate
+  - name: "GiveWell – High-Impact Global Charities"
+    url: "https://www.givewell.org/donate"
+  - name: "Effective Altruism Fund – Top Priority Causes"
+    url: "https://www.effectivealtruism.org/donate"
+  - name: "UNICEF – Child Welfare & Humanitarian Aid"
+    url: "https://www.unicef.org/donate"
+  - name: "Khan Academy – Free Education Worldwide"
+    url: "https://www.khanacademy.org/donate"
