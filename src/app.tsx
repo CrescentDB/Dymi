@@ -5,6 +5,7 @@ import ThemeSwitcher from './components/ThemeSwitcher'
 import SettingsPanel from './components/SettingsPanel'
 import { useTime } from './hooks/useTime'
 import { useTheme } from './hooks/useTheme'
+import { useKeyboard } from './hooks/useKeyboard'
 import { Settings, Maximize2, Minimize2 } from 'lucide-react'
 
 function App() {
@@ -12,8 +13,14 @@ function App() {
   const { theme, setTheme, isDark } = useTheme()
   const [showSettings, setShowSettings] = useState(false)
   const [isFullscreen, setIsFullscreen] = useState(false)
-  const [format24h, setFormat24h] = useState(false)
-  const [timezone, setTimezone] = useState('local')
+  const [format24h, setFormat24h] = useState(() => {
+    const saved = localStorage.getItem('dymi-format')
+    return saved === 'true'
+  })
+  const [timezone, setTimezone] = useState(() => {
+    const saved = localStorage.getItem('dymi-timezone')
+    return saved || 'local'
+  })
 
   const toggleFullscreen = () => {
     if (!document.fullscreenElement) {
@@ -24,6 +31,29 @@ function App() {
       setIsFullscreen(false)
     }
   }
+
+  const cycleTheme = () => {
+    const themes: Array<'midnight' | 'aurora' | 'minimal' | 'auto'> = ['midnight', 'aurora', 'minimal', 'auto']
+    const currentIndex = themes.indexOf(theme as any)
+    const nextIndex = (currentIndex + 1) % themes.length
+    setTheme(themes[nextIndex])
+  }
+
+  // Keyboard shortcuts
+  useKeyboard({
+    'space': toggleFullscreen,
+    't': cycleTheme,
+    's': () => setShowSettings(true),
+    'escape': () => {
+      if (showSettings) setShowSettings(false)
+      else if (document.fullscreenElement) document.exitFullscreen()
+    },
+    'f': () => {
+      const newFormat = !format24h
+      setFormat24h(newFormat)
+      localStorage.setItem('dymi-format', String(newFormat))
+    },
+  })
 
   return (
     <div className={`app ${theme}`} data-dark={isDark}>
@@ -57,9 +87,15 @@ function App() {
       {showSettings && (
         <SettingsPanel
           format24h={format24h}
-          setFormat24h={setFormat24h}
+          setFormat24h={(value) => {
+            setFormat24h(value)
+            localStorage.setItem('dymi-format', String(value))
+          }}
           timezone={timezone}
-          setTimezone={setTimezone}
+          setTimezone={(value) => {
+            setTimezone(value)
+            localStorage.setItem('dymi-timezone', value)
+          }}
           onClose={() => setShowSettings(false)}
         />
       )}
