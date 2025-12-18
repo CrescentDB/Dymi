@@ -1,93 +1,118 @@
-# 🕰️ Dymi
+<h1 align="center">🕰️ Dymi</h1>
 
-> **Time, beautifully rendered.**
+<p align="center">
+  <strong>Time, beautifully rendered.</strong><br/>
+  A calm, precise clock for the modern web.
+</p>
 
-<div align="center">
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-CSPL--3.3-blue.svg"></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/version-1.0.0-green.svg"></a>
+  <a href="https://github.com/CrescentDB/dymi/actions"><img src="https://github.com/CrescentDB/dymi/workflows/Deploy/badge.svg"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
+</p>
 
-[![License](https://img.shields.io/badge/license-CSPL--3.3-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](package.json)
-[![Build Status](https://github.com/CrescentDB/dymi/workflows/Deploy/badge.svg)](https://github.com/CrescentDB/dymi/actions)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-5.2-blue?logo=typescript">
+  <img src="https://img.shields.io/badge/React-18-61dafb?logo=react">
+  <img src="https://img.shields.io/badge/Vite-5.0-646cff?logo=vite">
+  <a href="https://github.com/CrescentDB/dymi/stargazers">
+    <img src="https://img.shields.io/github/stars/CrescentDB/dymi?style=social">
+  </a>
+</p>
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-18-61dafb?logo=react)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-5.0-646cff?logo=vite)](https://vitejs.dev/)
-[![Stars](https://img.shields.io/github/stars/CrescentDB/dymi?style=social)](https://github.com/CrescentDB/dymi/stargazers)
+<p align="center">
+  <a href="https://dymi.netlify.app/">Live Demo</a> ·
+  <a href="https://github.com/CrescentDB/dymi/issues">Report Bug</a> ·
+  <a href="https://github.com/CrescentDB/dymi/issues">Request Feature</a>
+</p>
 
-[Live Demo](https://dymi.app) · [Report Bug](https://github.com/CrescentDB/dymi/issues) · [Request Feature](https://github.com/CrescentDB/dymi/issues)
-
-![Dymi Preview](./public/og-image.png)
-
-</div>
+<p align="center">
+  <img src="./public/favicon.svg" alt="Dymi preview" width="420"/>
+</p>
 
 ---
 
-A minimal, elegant, open-source clock for your browser. Built with care for those who appreciate visual calm and perfect timing.
+## Why Dymi?
 
-## ✨ Features
+Dymi is a **minimal, elegant, open‑source clock** built for focus‑first environments. No clutter. No distractions. Just time—rendered smoothly, accurately, and beautifully.
+
+Whether you pin it to a second monitor, run it fullscreen, or embed it in a kiosk setup, Dymi stays out of your way and looks great doing it.
+
+---
+
+## ✨ Features at a Glance
 
 <table>
 <tr>
 <td width="50%">
 
-### 🎨 **Visual Excellence**
-- Smooth 50ms interpolation
-- Four beautiful themes
-- Glassmorphic UI
-- Responsive design
+### 🎨 Visual Polish
+
+* Ultra‑smooth 50 ms interpolation
+* Carefully designed themes
+* Subtle glassmorphism
+* Fully responsive layout
 
 </td>
 <td width="50%">
 
-### ⚡ **Performance**
-- Lightning-fast Vite build
-- < 100KB bundle size
-- 95+ Lighthouse score
-- PWA-ready
+### ⚡ Performance First
+
+* Instant Vite startup
+* Tiny bundle footprint
+* 95+ Lighthouse score
+* Offline‑ready (PWA)
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 🌍 **Global Ready**
-- 16+ timezones
-- 12/24-hour format
-- Auto day/night theme
-- Keyboard shortcuts
+### 🌍 Time, Everywhere
+
+* 16+ time zones
+* 12 / 24‑hour modes
+* Automatic day/night theming
+* Smart locale handling
 
 </td>
 <td width="50%">
 
-### 🛠️ **Developer Friendly**
-- TypeScript + React
-- Clean architecture
-- Well documented
-- Easy to customize
+### 🛠️ Developer‑Friendly
+
+* TypeScript + React
+* Clean, readable architecture
+* Simple configuration
+* Easy to fork & extend
 
 </td>
 </tr>
 </table>
 
+---
+
 ## 🚀 Quick Start
 
 ```bash
-# Clone the repository
+# Clone
 git clone https://github.com/CrescentDB/dymi.git
 cd dymi
 
 # Install dependencies
 npm install
 
-# Start dev server
+# Start development server
 npm run dev
 ```
 
-Visit `http://localhost:3000` 🎉
+Open `http://localhost:5173` in your browser.
 
-## 📦 Installation
+---
 
-### Deploy Now
+## 📦 Deployment
+
+### One‑Click Deploy
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CrescentDB/dymi)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/CrescentDB/dymi)
@@ -98,92 +123,103 @@ Visit `http://localhost:3000` 🎉
 docker-compose up -d
 ```
 
-See [Installation Guide](./docs/INSTALLATION.md) for more options.
+See the [Installation Guide](./docs/INSTALLATION.md) for more options.
+
+---
 
 ## 🎨 Themes
 
-| Midnight | Aurora | Minimal | Auto |
-|----------|--------|---------|------|
-| Deep blue indigo | Teal & coral | Clean light | Adaptive |
-| ![Midnight](https://via.placeholder.com/150x100/0a0e27/6366f1?text=Midnight) | ![Aurora](https://via.placeholder.com/150x100/1a1a2e/16c79a?text=Aurora) | ![Minimal](https://via.placeholder.com/150x100/fafafa/2563eb?text=Minimal) | ![Auto](https://via.placeholder.com/150x100/gradient/ffffff?text=Auto) |
+| Theme        | Description                       |
+| ------------ | --------------------------------- |
+| **Midnight** | Deep indigo tones for dark rooms  |
+| **Aurora**   | Teal & coral with subtle contrast |
+| **Minimal**  | Clean, bright, distraction‑free   |
+| **Auto**     | Adapts to system time             |
+
+---
 
 ## ⌨️ Keyboard Shortcuts
 
-| Key | Action |
-|-----|--------|
-| `Space` | Toggle fullscreen |
-| `T` | Cycle themes |
-| `S` | Open settings |
-| `Esc` | Close/Exit |
+| Key     | Action              |
+| ------- | ------------------- |
+| `Space` | Toggle fullscreen   |
+| `T`     | Cycle themes        |
+| `S`     | Open settings       |
+| `Esc`   | Exit / close panels |
 
-[See all shortcuts →](./docs/KEYBOARD_SHORTCUTS.md)
+Full list → [Keyboard Shortcuts](./docs/KEYBOARD_SHORTCUTS.md)
+
+---
 
 ## 📚 Documentation
 
-- [Installation Guide](./docs/INSTALLATION.md) — Deploy anywhere
-- [Customization Guide](./docs/CUSTOMIZATION.md) — Make it yours
-- [Architecture](./docs/ARCHITECTURE.md) — How it works
-- [FAQ](./docs/FAQ.md) — Common questions
-- [Contributing](./CONTRIBUTING.md) — Join us
+* **[Installation](./docs/INSTALLATION.md)** — Run anywhere
+* **[Customization](./docs/CUSTOMIZATION.md)** — Make it yours
+* **[Architecture](./docs/ARCHITECTURE.md)** — Design decisions
+* **[FAQ](./docs/FAQ.md)** — Common questions
+* **[Contributing](./CONTRIBUTING.md)** — Get involved
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [React 18](https://react.dev/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Styling**: CSS3 + CSS Custom Properties
+* **Framework**: React 18
+* **Language**: TypeScript
+* **Bundler**: Vite
+* **Icons**: Lucide
+* **Styling**: Modern CSS + custom properties
 
-## 📊 Project Stats
+---
 
-![GitHub repo size](https://img.shields.io/github/repo-size/CrescentDB/dymi)
-![GitHub code size](https://img.shields.io/github/languages/code-size/CrescentDB/dymi)
-![GitHub last commit](https://img.shields.io/github/last-commit/CrescentDB/dymi)
-![GitHub issues](https://img.shields.io/github/issues/CrescentDB/dymi)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/CrescentDB/dymi)
+## 📊 Project Health
+
+![Repo Size](https://img.shields.io/github/repo-size/CrescentDB/dymi)
+![Code Size](https://img.shields.io/github/languages/code-size/CrescentDB/dymi)
+![Last Commit](https://img.shields.io/github/last-commit/CrescentDB/dymi)
+![Open Issues](https://img.shields.io/github/issues/CrescentDB/dymi)
+![Pull Requests](https://img.shields.io/github/issues-pr/CrescentDB/dymi)
+
+---
 
 ## 🤝 Contributing
 
-Contributions are what make the open-source community amazing! Any contributions you make are **greatly appreciated**.
+Open source thrives on collaboration. If you have an idea—small or big—we’d love to see it.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the repo
+2. Create a branch (`feature/your-feature`)
+3. Commit your changes
+4. Push and open a Pull Request
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+---
 
 ## 🌟 Stargazers
 
 [![Stargazers repo roster for @CrescentDB/dymi](https://reporoster.com/stars/CrescentDB/dymi)](https://github.com/CrescentDB/dymi/stargazers)
 
+---
+
 ## 📄 License
 
-Licensed under CSPL v3.3 — see [LICENSE](./LICENSE) for details.
+Licensed under **CSPL v3.3**. See [LICENSE](./LICENSE) for details.
+
+---
 
 ## 💝 Acknowledgments
 
-Built with love for the minimalist web.
+Built for people who value clarity, calm, and craft.
 
-Special thanks to:
-- The React team for an amazing framework
-- The Vite team for incredible build tools
-- The open-source community for inspiration
+Thanks to:
 
-## 📬 Contact
-
-- **Website**: [dymi.app](https://dymi.app)
-- **Email**: hello@dymi.app
-- **Twitter**: [@dymiapp](https://twitter.com/dymiapp)
-- **GitHub**: [@CrescentDB](https://github.com/CrescentDB)
+* React & Vite teams
+* Open‑source maintainers everywhere
 
 ---
 
 <div align="center">
 
-**[⬆ back to top](#-dymi)**
-
+**⬆ Back to top**
 Made with ❤️ by the Dymi community
 
 </div>
