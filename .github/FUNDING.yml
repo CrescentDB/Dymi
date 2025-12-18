@@ -1,9 +1,8 @@
-# FUNDING.yml
-# This project does NOT accept personal donations.
-# Any support is redirected to verified charities and public-good causes.
+# .github/FUNDING.yml
+# All support for Dymi goes directly to charities and global good causes.
 
 custom:
-  - https://www.givewell.org
-  - https://www.effectivealtruism.org/donate
-  - https://www.unicef.org/donate
-  - https://www.khanacademy.org/donate
+  - https://www.givewell.org/donate # Evidence-based, high-impact global charities
+  - https://www.effectivealtruism.org/donate # Supports top-priority causes worldwide
+  - https://www.unicef.org/donate # Child welfare and humanitarian aid
+  - https://www.khanacademy.org/donate # Free global education
