@@ -104,7 +104,7 @@ npm install
 
 # Start development server
 npm run dev
-```
+````
 
 Open `http://localhost:5173` in your browser.
 
@@ -115,7 +115,7 @@ Open `http://localhost:5173` in your browser.
 ### One‑Click Deploy
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CrescentDB/dymi)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/CrescentDB/dymi)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository-url=https://github.com/CrescentDB/dymi)
 
 ### Docker
 
@@ -148,6 +148,17 @@ See the [Installation Guide](./docs/INSTALLATION.md) for more options.
 | `Esc`   | Exit / close panels |
 
 Full list → [Keyboard Shortcuts](./docs/KEYBOARD_SHORTCUTS.md)
+
+---
+
+## 💝 Sponsor / Support Good Causes
+
+Dymi does **not accept personal donations**. If you enjoy using it and want to make a positive impact, please consider supporting these charities directly:
+
+[![GiveWell](https://img.shields.io/badge/GiveWell-Donate-brightgreen)](https://www.givewell.org/donate)
+[![Effective Altruism Fund](https://img.shields.io/badge/EA%20Fund-Donate-blue)](https://www.effectivealtruism.org/donate)
+[![UNICEF](https://img.shields.io/badge/UNICEF-Donate-yellow)](https://www.unicef.org/donate)
+[![Khan Academy](https://img.shields.io/badge/Khan%20Academy-Donate-orange)](https://www.khanacademy.org/donate)
 
 ---
 
@@ -215,11 +226,4 @@ Thanks to:
 * React & Vite teams
 * Open‑source maintainers everywhere
 
----
-
-<div align="center">
-
-**⬆ Back to top**
-Made with ❤️ by the Dymi community
-
-</div>
+Do you want me to create that `.github/FUNDING.yml` now too?
