@@ -1,8 +1,15 @@
 # .github/FUNDING.yml
-# All support for Dymi goes directly to charities and global good causes.
+# All funding for Dymi is redirected to charities and public-good causes.
+
+github:
+  - DymiCharityRedirect       # GitHub Sponsors account that donates 100% to charities
+
+open_collective: dymi-community  # Community fund, fully transparent
+
+liberapay: dymi-community        # Recurring support, fully open
 
 custom:
-  - https://www.givewell.org/donate # Evidence-based, high-impact global charities
-  - https://www.effectivealtruism.org/donate # Supports top-priority causes worldwide
-  - https://www.unicef.org/donate # Child welfare and humanitarian aid
-  - https://www.khanacademy.org/donate # Free global education
+  - https://www.givewell.org/donate
+  - https://www.effectivealtruism.org/donate
+  - https://www.unicef.org/donate
+  - https://www.khanacademy.org/donate
