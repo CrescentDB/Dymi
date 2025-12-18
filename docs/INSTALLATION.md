@@ -12,7 +12,7 @@ This guide covers multiple ways to run Dymi locally or deploy it to production.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dymi.git
+git clone https://github.com/CrescentDB/dymi.git
 cd dymi
 
 # Install dependencies
@@ -62,7 +62,7 @@ docker-compose down
 
 ### Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/dymi)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/CrescentDB/dymi)
 
 Or manually:
 
@@ -76,7 +76,7 @@ vercel
 
 ### Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/dymi)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/CrescentDB/dymi)
 
 Or use Netlify CLI:
 
@@ -96,7 +96,7 @@ The repository includes a GitHub Actions workflow that automatically deploys to 
 2. Set Source to "GitHub Actions"
 3. Push to `main` branch
 
-Your site will be live at `https://yourusername.github.io/dymi/`
+Your site will be live at `https://CrescentDB.github.io/dymi/`
 
 ### AWS S3 + CloudFront
 
