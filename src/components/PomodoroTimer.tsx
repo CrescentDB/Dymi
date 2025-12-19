@@ -14,7 +14,6 @@ const PomodoroTimer = () => {
       interval = setInterval(() => {
         if (seconds === 0) {
           if (minutes === 0) {
-            // Timer finished
             setIsActive(false)
             if (isBreak) {
               setMinutes(25)
