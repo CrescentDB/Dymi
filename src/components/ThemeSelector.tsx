@@ -22,7 +22,7 @@ const ThemeSelector = ({ currentTheme, setTheme, onClose }: ThemeSelectorProps) 
         </div>
 
         <div className="theme-grid">
-          {THEMES.map((theme) => (
+          {THEMES.map((theme: Theme) => (
             <button
               key={theme}
               className={`theme-card ${currentTheme === theme ? 'active' : ''}`}
