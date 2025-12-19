@@ -18,7 +18,6 @@ export const useTheme = () => {
       const autoTheme = hour >= 6 && hour < 18 ? 'minimal' : 'midnight'
       setIsDark(autoTheme !== 'minimal')
     } else {
-      // Light themes: minimal, cherry
       setIsDark(theme !== 'minimal' && theme !== 'cherry')
     }
   }, [theme])
