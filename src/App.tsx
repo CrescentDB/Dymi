@@ -46,7 +46,6 @@ function App() {
     setTheme(themes[nextIndex])
   }
 
-  // Keyboard shortcuts
   useKeyboard({
     'space': toggleFullscreen,
     't': cycleTheme,
