@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-type Theme = 'midnight' | 'aurora' | 'minimal' | 'auto'
+type Theme = 'midnight' | 'aurora' | 'minimal' | 'neon' | 'sunset' | 'forest' | 'ocean' | 'rosegold' | 'monochrome' | 'retro' | 'cherry' | 'auto'
 
 export const useTheme = () => {
   const [theme, setTheme] = useState<Theme>(() => {
@@ -18,7 +18,8 @@ export const useTheme = () => {
       const autoTheme = hour >= 6 && hour < 18 ? 'minimal' : 'midnight'
       setIsDark(autoTheme !== 'minimal')
     } else {
-      setIsDark(theme !== 'minimal')
+      // Light themes: minimal, cherry
+      setIsDark(theme !== 'minimal' && theme !== 'cherry')
     }
   }, [theme])
 
