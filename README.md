@@ -226,4 +226,3 @@ Thanks to:
 * React & Vite teams
 * Open‑source maintainers everywhere
 
-Do you want me to create that `.github/FUNDING.yml` now too?
